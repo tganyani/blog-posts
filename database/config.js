@@ -1,5 +1,6 @@
 const pg = require('pg')
-const conString = "postgres://cxsyatnq:iLAC6fGRXfqeJXbtBeTZoRUswOrMwQgM@isilo.db.elephantsql.com/cxsyatnq"
+require('dotenv').config()
+const conString = process.env.DB_URL
 const client = new pg.Client(conString)
 
 client.connect()
