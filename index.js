@@ -37,7 +37,6 @@ const port = process.env.PORT || 4000
 app.listen(port, () => console.log(`The server is on port: ${port}`))
 
 
-module.exports = app
 
 
 
